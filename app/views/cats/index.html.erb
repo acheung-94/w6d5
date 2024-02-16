@@ -1,0 +1,13 @@
+<h1> NinetyNine Cats</h1>
+<h2> Here are all of our cats!</h2>
+
+<% @cats.each do |cat|%>
+    <h3><% cat.name%></h3>
+    <ul>
+        <li><%=cat.age%></li>
+        <li><%=cat.sex%></li>
+        <li><%=cat.color%></li>
+        <li><%=cat.birth_date%></li>
+        <li><%=cat.description%></li>
+    </ul>
+<%end%>
