@@ -7,7 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-
+ActiveRecord::Base.connection.reset_pk_sequence!('cats')
 Cat.create(name: "Moose", birth_date: "2009/1/1", sex: "M", color: "gray", description: "used to be a mean cat, but after hit by car he is nice")
 Cat.create(name: "Squish", birth_date: "2021/6/27", sex: "M", color: "black", description: "fluffy sassy boy cat")
 Cat.create(name: "Lilly", birth_date: "2017/3/1", sex: "F", color: "black", description: "Queen Bee")

@@ -1,0 +1,37 @@
+<h1>About <%= @cat.name %></h1>
+
+<table>
+    <thead>
+      <tr>
+        <th scope="col">Info</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Name</th>
+        <td><%= @cat.name %></td>
+      </tr>
+      <tr>
+        <th scope="row">Birth Date</th>
+        <td><%= @cat.birth_date %></td>
+      </tr>
+      <tr>
+        <th scope="row">Sex</th>
+        <td><%= @cat.sex %></td>
+      </tr>
+      <tr>
+        <th scope="row">Color</th>
+        <td><%= @cat.color %></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="2">Description</th>
+      </tr>
+      <tr>
+        <td colspan="2"><%= @cat.description %></td>
+      </tr>
+    </tfoot>
+  </table>
+ <a href="<%= cats_url %>">Back to all the cats!</a> 
